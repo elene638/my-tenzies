@@ -14,7 +14,7 @@ main {
     border-radius: 10px;
     display: block;
     margin: 0 auto;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     height: 400px;
     max-width: 800px;
     padding: 20px;
@@ -31,6 +31,7 @@ main {
     /* grid-template: auto auto / repeat(5, 1fr); */
     grid-gap: 20px;
     align-content: center;
+    position: relative;
 }
 
 .box {
@@ -51,6 +52,23 @@ main {
     color: #2B283A;
 }
 
+.button2 {
+    position: absolute;
+    left: 50%;
+    margin-left: 5px; 
+    top: 90%;
+    margin-top: -18px;
+
+}
+
+.button1 {
+    position: absolute;
+    right: 50%;
+    margin-right: 5px;
+    top: 90%;
+    margin-top: -18px;
+}
+
 button {
     
     background: #5035FF;
@@ -59,7 +77,6 @@ button {
     width: 92px;
     border-radius: 4px;
     border: none;
-    
 }
 
 button:focus {
@@ -70,13 +87,34 @@ button:active {
     box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
 
-/* .title {
+.title {
     font-size: 40px;
     margin: 0;
+    text-align: center;
+    color: #F5F5F5;
 }
 
 .instructions {
     font-weight: 400;
-    margin-top: 0;
+    margin-top: 40px;
     text-align: center;
-} */
+    color: #F5F5F5;
+}
+
+.score-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .score-points {
+    margin: 0 5px;
+    display: inline-block;
+    color: #ffffff;
+    padding: 5px;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+    background-color: rgb(148, 148, 148);
+    border-radius: 5px;
+  }
